@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const listTop = document.querySelector('.nav_produc_top');
   const listCategory = document.querySelector('.right_category');
 
-  fetch('../data.json')
+  fetch('./data.json')
     .then(response => response.json())
     .then(data => {
       const products = data.data;
