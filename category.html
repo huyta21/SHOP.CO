@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOP.CO</title>
+    <link rel="shortcut icon" href="./assets/img/SHOP.CO.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/responsive.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+<link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+</head>
+<body>
+  
+    <div class="banner-qc">
+        <div class="wide">
+            <div class="left">
+                <span>Sign up and get 20% off to your first order.</span>
+                <a href="#" class="login">Sign Up Now</a>
+            </div>
+            <div class="right">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+    </div>
+
+    <div id="header">
+        
+    </div>
+
+
+    <div class="category">
+        <div class="wide category_nav">
+            <div class="link">
+                <a href="/">Home</a>
+                <a href="#">Casual</a>
+            </div>
+
+            <div class="nav_conten">
+                <div class="left" id="filterMenu">
+                    <div class="top">
+                        <span>Filters</span>
+                        <img src="./assets/img/icon_fil.png" alt="">
+                        <label id="closeFilterMenu" for="fil_mobi-check"><i class="fas fa-times"></i></label>
+                    </div>
+                    <div class="fil_menu">
+                        <ul>
+                            <li>
+                                <div class="fil_menu-item">
+                                    <a href="#">Electronics</a>
+                                    <i class="fas fa-chevron-right"></i>
+                                </div>
+                                <ul class="fil_menu-mini">
+                                    <li><a href="#">Electronics</a></li>
+                                    <li><a href="#">Jewelery</a></li>
+                                    <li><a href="#">Men's Clothing</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="fil_menu-item">
+                                <a href="#">Jewelery</a>
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                            </li>
+                            <li>
+                                <div class="fil_menu-item">
+                                <a href="#">Men's Clothing</a>
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                            </li>
+                            <li>
+                                <div class="fil_menu-item">
+                                <a href="#">Women's Clothing</a>
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="filter-section">
+                        <div class="filter-header" id="toggleFilter">
+                            <strong>Price</strong>
+                            <span class="arrow" id="arrowIcon"> <i class="fas fa-chevron-right"></i></span> <!-- ▲ -->
+                          </div>
+                        
+                          <div class="price-slider-wrapper" id="priceSlider">
+                            <div class="price-slider">
+                              <div class="slider-track"></div>
+                          
+                          <div class="price-bubble" id="minBubble">$50</div>
+                          <div class="price-bubble" id="maxBubble">$200</div>
+                          
+                          <input type="range" id="minPrice" min="0" max="300" value="50" step="10">
+                          <input type="range" id="maxPrice" min="0" max="300" value="200" step="10">
+                        </div>
+                    </div>
+
+                    <div class="filter-section">
+                        <div class="filter-header" id="toggleRating">
+                          <strong>Rating</strong>
+                          <span class="arrow" id="arrowRating"> <i class="fas fa-chevron-right"></i></span>
+                        </div>
+                      
+                        <div class="rating-filter-wrapper" id="ratingFilter">
+                          <div class="rating-stars">
+                            <span class="star" data-value="1">&#9733;</span>
+                            <span class="star" data-value="2">&#9733;</span>
+                            <span class="star" data-value="3">&#9733;</span>
+                            <span class="star" data-value="4">&#9733;</span>
+                            <span class="star" data-value="5">&#9733;</span>
+                          </div>
+                        </div>
+                    </div>
+                      
+                    <button class="btn_fil">
+                        <span>Apply Filter</span>
+                    </button>  
+                    </div>
+                </div>
+            <div class="right">
+                <div class="right_head">
+                    <h3>Casual</h3>
+                    <div class="page_top">
+                        <span>Showing 1-10 of 100 Products</span>
+                        <span>Sort by: <strong>Most Popular </strong> <i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="fil_mobi">
+                       
+                        <label id="openFilterMenu" ><img src="./assets/img/icon_fil.png" alt=""></label>
+                        <div id="overlay"  class="opacyti_fil"></div>
+                    </div>
+                    
+                </div>
+
+                <div class="right_category">
+
+                </div>
+
+                <div class="page_l">
+                    <div class="left_page">
+                        <i class="fas fa-arrow-left"></i> 
+                        <span>Previous</span>
+                    </div>
+
+                    <div class="center_page">
+                        <ul>
+                            <li class="active">
+                                <a href="#">1</a>
+                            </li>
+                            <li>
+                                <a href="#">2</a>
+                            </li>
+                            <li class="hiden">
+                                <a href="#">3</a>
+                            </li>
+                            <li>
+                                <a href="#">...</a>
+                            </li>
+                            <li class="hiden">
+                                <a href="#">8</a>
+                            </li>
+                            <li>
+                                <a href="#">9</a>
+                            </li>
+                            <li>
+                                <a href="#">10</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="right_page">
+                        <span>Next</span>
+                        <i class="fas fa-arrow-right"></i> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    <div class="nav_produc_top hiden"></div>
+    <div class="nav_produc hiden"></div>
+<div id="footer">
+    <div class="wide  footer_conten">
+
+        <div class="about">
+            <a href="#">STAY UPTO DATE ABOUT OUR LATEST OFFERS</a>
+            <form id="emailForm" class="emailForm">
+                <div class="from_mail">
+                    <label for="email"><i class="far fa-envelope"></i></label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email address">
+                </div>
+                <button type="submit" class="btn">Subscribe to Newsletter</button>
+                <p id="error" style="color: red; display: none;">Email không hợp lệ!</p>
+              </form>
+        </div>
+
+        <div class="navbar">
+            <div class="item">
+                <a href="/" class="img"><img src="./assets/img/SHOP.CO.png" alt=""></a>
+                <span>We have clothes that suits your style and which you’re proud to wear. From women to men.</span>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <div class="link_img">
+                                <img src="./assets/img/1.png" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="link_img">
+                                <img src="./assets/img/2.png" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="link_img">
+                                <img src="./assets/img/3.png" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="link_img">
+                                <img src="./assets/img/4.png" alt="">
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="list">
+                <div class="list_item">
+                    <span>Company</span>
+                    <ul>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Features</a>
+                        </li>
+                        <li>
+                            <a href="#">Works</a>
+                        </li>
+                        <li>
+                            <a href="#">Career</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="list_item">
+                    <span>Help</span>
+                    <ul>
+                        <li>
+                            <a href="#">Customer Support</a>
+                        </li>
+                        <li>
+                            <a href="#">Delivery Details</a>
+                        </li>
+                        <li>
+                            <a href="#">Terms & Conditions</a>
+                        </li>
+                        <li>
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="list_item">
+                    <span>FAQ</span>
+                    <ul>
+                        <li>
+                            <a href="#">Account</a>
+                        </li>
+                        <li>
+                            <a href="#">Manage Deliveries</a>
+                        </li>
+                        <li>
+                            <a href="#">Orders</a>
+                        </li>
+                        <li>
+                            <a href="#">Payments</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="list_item">
+                    <span>Resources</span>
+                    <ul>
+                        <li>
+                            <a href="#">Free eBooks</a>
+                        </li>
+                        <li>
+                            <a href="#">Development Tutorial</a>
+                        </li>
+                        <li>
+                            <a href="#">How to - Blog</a>
+                        </li>
+                        <li>
+                            <a href="#">Youtube Playlist</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="end">
+            <span>
+                Shop.co © 2000-2023, All Rights Reserved
+            </span>
+            <div class="end_link">
+                <a href="#"><img src="./assets/img/end1.png" alt=""></a>
+                <a href="#"><img src="./assets/img/end2.png" alt=""></a>
+                <a href="#"><img src="./assets/img/end3.png" alt=""></a>
+                <a href="#"><img src="./assets/img/end4.png" alt=""></a>
+                <a href="#"><img src="./assets/img/end5.png" alt=""></a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<script>
+    // headẻ dùng trung
+  fetch('header.html')
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById('header').innerHTML = data;
+  })
+  .then(() => {
+    // Sau khi header được nạp, gọi hàm cập nhật giỏ hàng
+    updateCartCount();
+  });
+</script>
+<script
+src="https://code.jquery.com/jquery-3.7.1.min.js"
+integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+crossorigin="anonymous"></script>
+
+<script
+type="text/javascript"
+src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+></script>
+<script src="./assets/javascript.js"></script>
+</body>
+</html>

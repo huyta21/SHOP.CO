@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOP.CO</title>
+    <link rel="shortcut icon" href="./assets/img/SHOP.CO.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/responsive.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+<link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+</head>
+<body>
+  
+    <div class="banner-qc">
+        <div class="wide">
+            <div class="left">
+                <span>Sign up and get 20% off to your first order.</span>
+                <a href="#" class="login">Sign Up Now</a>
+            </div>
+            <div class="right">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+    </div>
+
+    <div id="header">
+        
+    </div>
+
+    <div class="detail">
+        <div class="wide detail_nav">
+            <div class="link">
+                <a href="/">Home</a>
+                <a href="#">Shop</a>
+                <a href="#">Men</a>
+                <a href="#">T-shits</a>
+            </div>
+
+            <div id="productDetail">
+                <div class="left">
+                    <ul>
+                        <li>
+                            <img id="productImage" src="" alt="Product Image" onclick="myFunction(this);">
+
+                        </li>
+                        <li>
+                            <img id="productImage" src="./assets/img/end3.png" alt="Product Image" onclick="myFunction(this);">
+
+                        </li>
+                    </ul>
+
+                    <div class="container_detail">
+                        <!-- Expanded image -->
+                        <img id="expandedImg" style="width:100%">
+                    
+                      </div>
+
+                </div>
+                <div class="right">
+                    <h2 id="productName" class="right_title"></h2>
+                    <div id="productRating" class="Rating"></div>
+                    <div id="productPrice" class="price"></div>
+                    <p id="productDesc" class="desc"></p>
+                    
+                    <div class="color-picker">
+                        <label>Select Colors</label>
+                        <div class="color-options">
+                          <div class="color-circle selected" style="--color: #4b422e;"></div>
+                          <div class="color-circle" style="--color: #2f4f4f;"></div>
+                          <div class="color-circle" style="--color: #2e2f4b;"></div>
+                        </div>
+                    </div>
+
+                    <div class="size-picker">
+                        <label>Choose Size</label>
+                        <div class="size-options">
+                          <div class="size-circle selected"><span>Small</span></div>
+                          <div class="size-circle" ><span>Medium</span></div>
+                          <div class="size-circle" ><span>Large</span></div>
+                          <div class="size-circle" ><span>X-Large</span></div>
+                        </div>
+                    </div>
+
+                    <div class="add_tocart">
+                        <div class="quantity-selector">
+                            <button class="qty-btn" onclick="changeQuantity(-1)">−</button>
+                            <input type="number" id="quantityInput" value="1" min="1" readonly>
+                            <button class="qty-btn" onclick="changeQuantity(1)">+</button>
+                        </div>
+
+                        <button class="btn_cart"> <span>Add to Cart</span></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="desc_nav">
+                <div class="tab">
+                    <button class="tablinks" onclick="openCity(event, 'Product')" >Product Details</button>
+                    <button class="tablinks" onclick="openCity(event, 'Rating')" id="defaultOpen" >Rating & Reviews</button>
+                    <button class="tablinks" onclick="openCity(event, 'FAQs')">FAQs</button>
+                  </div>
+                  
+                  <div id="Product" class="tabcontent">
+                    <p id="productDescs" class="desc"></p>
+                  </div>
+                  
+                  <div id="Rating" class="tabcontent">
+                    <div class="rating_head">
+                        <div class="left">
+                            <p>All Reviews</p>
+                            <span>(451)</span>
+                        </div>
+                        <div class="right">
+                            <img src="./assets/img/icon_fil.png" alt="">
+                            <div class="item">
+                                <span>Latest</span>
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                            <p class="right_wing">Write a Review</p>
+                        </div>
+                    </div>
+                    <div class="rating_conten">
+                        <div class="item">
+                            <div class="top">
+                                <div class="star_rating">
+                                    <i class="fas fa-star" style="color: gold;"></i>
+                                    <i class="fas fa-star" style="color: gold;"></i>
+                                    <i class="fas fa-star" style="color: gold;"></i>
+                                    <i class="fas fa-star" style="color: gold;"></i>
+                                </div>
+                                <p>...</p>
+                            </div>
+                            <div class="title">
+                                <p>Samantha D.<i class="fas fa-check-circle" style="color:rgba(1, 171, 49, 1) ;"></i></p>
+                            </div>
+                            <p class="desc">"I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt."</p>
+                            <span class="time">Posted on August 14, 2023</span>
+                        </div>
+                        <div class="item">
+                            <div class="top">
+                                <div class="star_rating">
+                                    <i class="fas fa-star" style="color: gold;"></i>
+                                    <i class="fas fa-star" style="color: gold;"></i>
+                                    <i class="fas fa-star" style="color: gold;"></i>
+                                    <i class="fas fa-star" style="color: gold;"></i>
+                                </div>
+                                <p>...</p>
+                            </div>
+                            <div class="title">
+                                <p>Alex M.<i class="fas fa-check-circle" style="color:rgba(1, 171, 49, 1) ;"></i></p>
+                            </div>
+                            <p class="desc">"The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me."</p>
+                            <span class="time">Posted on August 15, 2023</span>
+                        </div>
+                        <div class="item">
+                            <div class="top">
+                                <div class="star_rating">
+                                    <i class="fas fa-star" style="color: gold;"></i>
+                                    <i class="fas fa-star" style="color: gold;"></i>
+                                    <i class="fas fa-star" style="color: gold;"></i>
+                                </div>
+                                <p>...</p>
+                            </div>
+                            <div class="title">
+                                <p>Ethan R.<i class="fas fa-check-circle" style="color:rgba(1, 171, 49, 1) ;"></i></p>
+                            </div>
+                            <p class="desc">"This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt."</p>
+                            <span class="time">Posted on August 16, 2023</span>
+                        </div>
+                        <div class="item">
+                            <div class="top">
+                                <div class="star_rating">
+                                    <i class="fas fa-star" style="color: gold;"></i>
+                                    <i class="fas fa-star" style="color: gold;"></i>
+                                    <i class="fas fa-star" style="color: gold;"></i>
+                                    <i class="fas fa-star" style="color: gold;"></i>
+                                </div>
+                                <p>...</p>
+                            </div>
+                            <div class="title">
+                                <p>Olivia P.<i class="fas fa-check-circle" style="color:rgba(1, 171, 49, 1) ;"></i></p>
+                            </div>
+                            <p class="desc">"As a UI/UX enthusiast, I value simplicity and functionality. This t-shirt not only represents those principles but also feels great to wear. It's evident that the designer poured their creativity into making this t-shirt stand out."</p>
+                            <span class="time">Posted on August 17, 2023</span>
+                        </div>
+                        <div class="item">
+                            <div class="top">
+                                <div class="star_rating">
+                                    <i class="fas fa-star" style="color: gold;"></i>
+                                    <i class="fas fa-star" style="color: gold;"></i>
+                                    <i class="fas fa-star" style="color: gold;"></i>
+                                    <i class="fas fa-star" style="color: gold;"></i>
+                                </div>
+                                <p>...</p>
+                            </div>
+                            <div class="title">
+                                <p>Liam K.<i class="fas fa-check-circle" style="color:rgba(1, 171, 49, 1) ;"></i></p>
+                            </div>
+                            <p class="desc">""This t-shirt is a fusion of comfort and creativity. The fabric is soft, and the design speaks volumes about the designer's skill. It's like wearing a piece of art that reflects my passion for both design and fashion."</p>
+                            <span class="time">Posted on August 18, 2023</span>
+                        </div>
+                        <div class="item">
+                            <div class="top">
+                                <div class="star_rating">
+                                    <i class="fas fa-star" style="color: gold;"></i>
+                                    <i class="fas fa-star" style="color: gold;"></i>
+                                    <i class="fas fa-star" style="color: gold;"></i>
+                                    <i class="fas fa-star" style="color: gold;"></i>
+                                </div>
+                                <p>...</p>
+                            </div>
+                            <div class="title">
+                                <p>Ava H.<i class="fas fa-check-circle" style="color:rgba(1, 171, 49, 1) ;"></i></p>
+                            </div>
+                            <p class="desc">"I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter."</p>
+                            <span class="time">Posted on August 19, 2023</span>
+                        </div>
+
+                        <div class="load_more">
+                            <button class="load_more-btn">Load More Reviews</button>
+                        </div>
+                    </div>
+                  </div>
+                  
+                  <div id="FAQs" class="tabcontent">
+                    <h3>Tokyo</h3>
+                    <p>Tokyo is the capital of Japan.</p>
+                  </div>
+            </div>
+
+            <div class="together">
+                <div class="head">
+                    <a href="#">You might also like</a>
+                </div>
+                <div class="nav_produc_top  nav_produc_top--detail"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="nav_produc_top hiden"></div>
+    <div class="nav_produc hiden"></div>
+    <div class="right_category hiden"></div>
+<div id="footer">
+    <div class="wide  footer_conten">
+
+        <div class="about">
+            <a href="#">STAY UPTO DATE ABOUT OUR LATEST OFFERS</a>
+            <form id="emailForm" class="emailForm">
+                <div class="from_mail">
+                    <label for="email"><i class="far fa-envelope"></i></label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email address">
+                </div>
+                <button type="submit" class="btn">Subscribe to Newsletter</button>
+                <p id="error" style="color: red; display: none;">Email không hợp lệ!</p>
+              </form>
+        </div>
+
+        <div class="navbar">
+            <div class="item">
+                <a href="/" class="img"><img src="./assets/img/SHOP.CO.png" alt=""></a>
+                <span>We have clothes that suits your style and which you’re proud to wear. From women to men.</span>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <div class="link_img">
+                                <img src="./assets/img/1.png" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="link_img">
+                                <img src="./assets/img/2.png" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="link_img">
+                                <img src="./assets/img/3.png" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="link_img">
+                                <img src="./assets/img/4.png" alt="">
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="list">
+                <div class="list_item">
+                    <span>Company</span>
+                    <ul>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Features</a>
+                        </li>
+                        <li>
+                            <a href="#">Works</a>
+                        </li>
+                        <li>
+                            <a href="#">Career</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="list_item">
+                    <span>Help</span>
+                    <ul>
+                        <li>
+                            <a href="#">Customer Support</a>
+                        </li>
+                        <li>
+                            <a href="#">Delivery Details</a>
+                        </li>
+                        <li>
+                            <a href="#">Terms & Conditions</a>
+                        </li>
+                        <li>
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="list_item">
+                    <span>FAQ</span>
+                    <ul>
+                        <li>
+                            <a href="#">Account</a>
+                        </li>
+                        <li>
+                            <a href="#">Manage Deliveries</a>
+                        </li>
+                        <li>
+                            <a href="#">Orders</a>
+                        </li>
+                        <li>
+                            <a href="#">Payments</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="list_item">
+                    <span>Resources</span>
+                    <ul>
+                        <li>
+                            <a href="#">Free eBooks</a>
+                        </li>
+                        <li>
+                            <a href="#">Development Tutorial</a>
+                        </li>
+                        <li>
+                            <a href="#">How to - Blog</a>
+                        </li>
+                        <li>
+                            <a href="#">Youtube Playlist</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="end">
+            <span>
+                Shop.co © 2000-2023, All Rights Reserved
+            </span>
+            <div class="end_link">
+                <a href="#"><img src="./assets/img/end1.png" alt=""></a>
+                <a href="#"><img src="./assets/img/end2.png" alt=""></a>
+                <a href="#"><img src="./assets/img/end3.png" alt=""></a>
+                <a href="#"><img src="./assets/img/end4.png" alt=""></a>
+                <a href="#"><img src="./assets/img/end5.png" alt=""></a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+
+    // headẻ dùng trung
+  fetch('header.html')
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById('header').innerHTML = data;
+  })
+  .then(() => {
+    // Sau khi header được nạp, gọi hàm cập nhật giỏ hàng
+    updateCartCount();
+  });
+
+    // Lấy ID sản phẩm từ URL
+    const params = new URLSearchParams(window.location.search);
+  const productId = params.get("id");
+
+  // Hàm render sao đánh giá
+  function renderStars(rate) {
+    const fullStars = Math.floor(rate);
+    const halfStar = rate % 1 >= 0.5;
+    const emptyStars = 5 - fullStars - (halfStar ? 1 : 0);
+
+    let stars = '';
+    for (let i = 0; i < fullStars; i++) stars += '<i class="fas fa-star" style="color:gold;"></i>';
+    if (halfStar) stars += '<i class="fas fa-star-half-alt" style="color:gold;"></i>';
+    for (let i = 0; i < emptyStars; i++) stars += '<i class="far fa-star" style="color:gold;"></i>';
+    return stars;
+  }
+
+  fetch('./data.json')
+    .then(res => res.json())
+    .then(data => {
+      const product = data.data.find(item => item.id === Number(productId));
+      if (product) {
+        document.getElementById("productName").textContent = product.title;
+        document.getElementById("productImage").src = product.image;
+        document.getElementById("productDesc").textContent = product.description;
+        document.getElementById("productDescs").textContent = product.description;
+
+        // Hiển thị giá và giá gốc (nếu có)
+        const currentPrice = `$${product.price.toFixed(2)}`;
+        let originalPrice = '';
+        let discount = '';
+
+        if (product.price_has && product.price_has > product.price) {
+          originalPrice = `<span>$${product.price_has.toFixed(2)}</span>`;
+          const discountPercent = Math.round(((product.price_has - product.price) / product.price_has) * 100);
+          discount = `<span>-${discountPercent}%</span>`;
+        }
+
+        document.getElementById("productPrice").innerHTML = `
+          ${currentPrice}
+          ${originalPrice}
+          ${discount}
+        `;
+
+        // Hiển thị sao đánh giá
+        const ratingStars = renderStars(product.rating?.rate || 0);
+        const ratingValue = product.rating?.rate?.toFixed(1) ?? "0.0";
+        document.getElementById("productRating").innerHTML = `
+          ${ratingStars}
+          <span style="margin-left: 8px;">${ratingValue}/5</span>
+        `;
+      } else {
+        document.getElementById("productDetail").innerHTML = "<p>Product not found.</p>";
+      }
+    })
+    .catch(error => {
+      console.error("Error loading product:", error);
+      document.getElementById("productDetail").innerHTML = "<p>Failed to load product data.</p>";
+    });
+
+//   zoom arnh
+function myFunction(imgs) {
+  // Get the expanded image
+  var expandImg = document.getElementById("expandedImg");
+  // Use the same src in the expanded image as the image being clicked on from the grid
+  expandImg.src = imgs.src;
+  // Use the value of the alt attribute of the clickable image as text inside the expanded image
+  imgText.innerHTML = imgs.alt;
+  // Show the container element (hidden with CSS)
+  expandImg.parentElement.style.display = "block";
+}
+window.onload = function () {
+    const firstImg = document.querySelector('#productImage');
+    if (firstImg) {
+      myFunction(firstImg);
+    }
+  }
+
+// chọn màu
+  const colorCircles = document.querySelectorAll('.color-circle');
+  colorCircles.forEach(circle => {
+    circle.addEventListener('click', () => {
+      colorCircles.forEach(c => c.classList.remove('selected'));
+      circle.classList.add('selected');
+    });
+  });
+
+//   chọn size
+const sizeCircles = document.querySelectorAll('.size-circle');
+sizeCircles.forEach(circle => {
+    circle.addEventListener('click', () => {
+        sizeCircles.forEach(c => c.classList.remove('selected'));
+      circle.classList.add('selected');
+    });
+  });
+
+
+//   nut chojn sp
+function changeQuantity(delta) {
+    const input = document.getElementById("quantityInput");
+    let value = parseInt(input.value) + delta;
+    if (value < 1) value = 1;
+    input.value = value;
+  }
+
+
+  // slider menu detail
+
+  function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+  // thêm sản phẩm vào giỏ hàng 
+  
+  function getProductIdFromURL() {
+    const params = new URLSearchParams(window.location.search);
+    return params.get('id');
+}
+console.log(getProductIdFromURL());
+
+  async function loadProductDetail() {
+    const id = getProductIdFromURL();
+    if (!id) return;
+
+    const res = await fetch(`https://fakestoreapi.com/products/${id}`);
+    const data = await res.json();
+
+    document.getElementById('productName').textContent = data.title;
+    document.getElementById('productPrice').textContent = `$${data.price}`;
+    document.getElementById('productDesc').textContent = data.description;
+    document.querySelector('#productImage').src = data.image;
+    document.getElementById('expandedImg').src = data.image; // default zoom
+}
+
+
+const colorNameMap = {
+    '#4b422e': 'Brown',
+    '#2f4f4f': 'Dark Slate Gray',
+    '#2e2f4b': 'Indigo'
+};
+
+function setupAddToCart() {
+    document.querySelector('.btn_cart').addEventListener('click', function () {
+        const title = document.getElementById('productName').textContent;
+        const price = parseFloat(document.getElementById('productPrice').textContent.replace('$', ''));
+        const image = document.querySelector('#productImage').src;
+        const quantity = parseInt(document.getElementById('quantityInput').value);
+
+        const sizeEl = document.querySelector('.size-circle.selected span');
+        const size = sizeEl ? sizeEl.textContent.trim() : '';
+
+        const colorEl = document.querySelector('.color-circle.selected');
+        const colorHex = colorEl ? colorEl.style.getPropertyValue('--color').trim().toLowerCase() : '';
+        const colorName = colorNameMap[colorHex] || colorHex;
+
+        const product = {
+            id: getProductIdFromURL(),
+            title,
+            price,
+            image,
+            quantity,
+            size,
+            color: colorName
+        };
+
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        const existingProduct = cart.find(p =>
+            p.id === product.id &&
+            p.size === product.size &&
+            p.color === product.color
+        );
+
+        if (existingProduct) {
+            existingProduct.quantity += product.quantity;
+        } else {
+            cart.push(product);
+        }
+
+        localStorage.setItem('cart', JSON.stringify(cart));
+        alert('Đã thêm vào giỏ hàng!');
+        location.reload(); // 👈 Reload lại trang sau khi thêm
+    });
+}
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    loadProductDetail();
+    setupAddToCart();
+});
+
+  </script>
+
+
+<script
+src="https://code.jquery.com/jquery-3.7.1.min.js"
+integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+crossorigin="anonymous"></script>
+
+<script
+type="text/javascript"
+src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+></script>
+<script src="./assets/javascript.js"></script>
+</body>
+</html>

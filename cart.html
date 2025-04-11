@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOP.CO</title>
+    <link rel="shortcut icon" href="./assets/img/SHOP.CO.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/responsive.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+<link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+</head>
+<body>
+  
+    <div class="banner-qc">
+        <div class="wide">
+            <div class="left">
+                <span>Sign up and get 20% off to your first order.</span>
+                <a href="#" class="login">Sign Up Now</a>
+            </div>
+            <div class="right">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+    </div>
+
+    <div id="header">
+        
+    </div>
+
+
+    <div class="cart_navbar header_all--conten">
+        <div class="wide cart_conten header_all--conten-a">
+            <div class="link">
+                <a href="/">Home</a>
+                <a href="#">Cart</a>
+            </div>
+
+            <div class="navbar">
+                <h3>your cart</h3>
+                <div class="navbar_produc-cart">
+                    <div class="left" id="cartContainer">
+
+                    </div>
+                    <div class="right">
+                        <p class="head">Order Summary</p>
+                        <div class="sub">
+                            <span>Subtotal</span>
+                            <span id="subtotalAmount">$0</span>
+                        </div>
+                        <div class="dis">
+                            <span>Discount (-20%)</span>
+                            <span id="discountAmount">-$0</span>
+                        </div>
+                        <div class="dell">
+                            <span>Delivery Fee</span>
+                            <span id="deliveryFee">$0</span>
+                        </div>
+                        <div class="total">
+                            <span>Total</span>
+                            <span id="totalAmount">$0</span>
+                        </div>
+                        <div class="wing">
+                            <div class="wing_left">
+                                <i class="fas fa-tag"></i>
+                                <input type="text" placeholder="Add promo code">
+                            </div>
+                            <button class="cart_btn">Apply</button>
+                        </div>
+                        <a href="#" class="checkOut">
+                            Go to Checkout 
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cart-total" id="totalAmount"></div>
+
+<div class="nav_produc_top hiden"></div>
+<div class="nav_produc hiden"></div>
+<div class="right_category hiden"></div>
+<div id="footer">
+<div class="wide  footer_conten">
+
+    <div class="about">
+        <a href="#">STAY UPTO DATE ABOUT OUR LATEST OFFERS</a>
+        <form id="emailForm" class="emailForm">
+            <div class="from_mail">
+                <label for="email"><i class="far fa-envelope"></i></label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email address">
+            </div>
+            <button type="submit" class="btn">Subscribe to Newsletter</button>
+            <p id="error" style="color: red; display: none;">Email không hợp lệ!</p>
+          </form>
+    </div>
+
+    <div class="navbar">
+        <div class="item">
+            <a href="/" class="img"><img src="./assets/img/SHOP.CO.png" alt=""></a>
+            <span>We have clothes that suits your style and which you’re proud to wear. From women to men.</span>
+            <ul>
+                <li>
+                    <a href="#">
+                        <div class="link_img">
+                            <img src="./assets/img/1.png" alt="">
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="link_img">
+                            <img src="./assets/img/2.png" alt="">
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="link_img">
+                            <img src="./assets/img/3.png" alt="">
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="link_img">
+                            <img src="./assets/img/4.png" alt="">
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="list">
+            <div class="list_item">
+                <span>Company</span>
+                <ul>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Features</a>
+                    </li>
+                    <li>
+                        <a href="#">Works</a>
+                    </li>
+                    <li>
+                        <a href="#">Career</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="list_item">
+                <span>Help</span>
+                <ul>
+                    <li>
+                        <a href="#">Customer Support</a>
+                    </li>
+                    <li>
+                        <a href="#">Delivery Details</a>
+                    </li>
+                    <li>
+                        <a href="#">Terms & Conditions</a>
+                    </li>
+                    <li>
+                        <a href="#">Privacy Policy</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="list_item">
+                <span>FAQ</span>
+                <ul>
+                    <li>
+                        <a href="#">Account</a>
+                    </li>
+                    <li>
+                        <a href="#">Manage Deliveries</a>
+                    </li>
+                    <li>
+                        <a href="#">Orders</a>
+                    </li>
+                    <li>
+                        <a href="#">Payments</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="list_item">
+                <span>Resources</span>
+                <ul>
+                    <li>
+                        <a href="#">Free eBooks</a>
+                    </li>
+                    <li>
+                        <a href="#">Development Tutorial</a>
+                    </li>
+                    <li>
+                        <a href="#">How to - Blog</a>
+                    </li>
+                    <li>
+                        <a href="#">Youtube Playlist</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="end">
+        <span>
+            Shop.co © 2000-2023, All Rights Reserved
+        </span>
+        <div class="end_link">
+            <a href="#"><img src="./assets/img/end1.png" alt=""></a>
+            <a href="#"><img src="./assets/img/end2.png" alt=""></a>
+            <a href="#"><img src="./assets/img/end3.png" alt=""></a>
+            <a href="#"><img src="./assets/img/end4.png" alt=""></a>
+            <a href="#"><img src="./assets/img/end5.png" alt=""></a>
+        </div>
+    </div>
+
+</div>
+</div>
+<script>
+
+    // headẻ dùng trung
+  fetch('header.html')
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById('header').innerHTML = data;
+  })
+  .then(() => {
+    // Sau khi header được nạp, gọi hàm cập nhật giỏ hàng
+    updateCartCount();
+  });
+
+
+//   nut chojn so sp
+function changeQuantity(step, productId) {
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+    const product = cart.find(p => p.id == productId);
+
+    if (product) {
+        product.quantity += step;
+        if (product.quantity < 1) product.quantity = 1; 
+    }
+
+    // Lưu lại giỏ hàng
+    localStorage.setItem('cart', JSON.stringify(cart));
+
+    // Gọi lại hàm renderCart để cập nhật giao diện
+    renderCart();
+}
+
+  // add sản phẩm 
+  function renderCart() {
+      const cart = JSON.parse(localStorage.getItem('cart')) || [];
+      const cartContainer = document.getElementById('cartContainer');
+      const totalAmount = document.getElementById('totalAmount');
+
+      
+
+      cartContainer.innerHTML = '';
+      let total = 0;
+
+      if (cart.length === 0) {
+        cartContainer.innerHTML = '<p>Giỏ hàng trống.</p>';
+        totalAmount.textContent = '';
+        return;
+      }
+
+      cart.forEach((item, index) => {
+        const subtotal = item.price * item.quantity;
+        total += subtotal;
+
+        const div = document.createElement('div');
+        div.className = 'cart-item';
+        div.innerHTML = `
+
+                    
+        
+                        <div class="item">
+                            <div class="image">
+                                <img src="${item.image}" alt="${item.title}">
+                            </div>
+                            <div class="wing">
+                                <div class="wing_top">
+                                    <div class="wing_top-left">
+                                        <h4 id="cart_title">${item.title}</h4>
+                                        <p id="cart_size">Size: <span>${item.size || 'N/A'}</span></p>
+                                        <p id="cart_color">Color: <span>${item.color || 'N/A'}</span></p>
+                                    </div>
+                                    <div class="wing_top-right" onclick="removeItem(${index})">
+                                        <i class="fas fa-trash-alt" style="color: red;"></i>
+                                    </div>
+                                </div>
+                                <div class="wing_bottom">
+                                    <span class="cart_price" id="cart_price">$${item.price}</span>
+
+                                    <div class="quantity-selector">
+                                        <button class="qty-btn" onclick="changeQuantity(-1,${item.id})">−</button>
+                                        <input type="number" class="quantityInput" id="quantityInput-${item.id}" type="number" value="${item.quantity}" readonly>
+                                        <button class="qty-btn" onclick="changeQuantity(1,${item.id})">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+
+
+          
+        `;
+        cartContainer.appendChild(div);
+      });
+    //   totalAmount.textContent = `Tổng cộng: $${total.toFixed(2)}`;
+    //   const jjjj = totalAmount
+    //   console.log(jjjj)
+
+        const subtotalEl = document.getElementById('subtotalAmount');
+        const discountEl = document.getElementById('discountAmount');
+        const deliveryFeeEl = document.getElementById('deliveryFee');
+        const totalEl = document.getElementById('totalAmount');
+
+        // Tính các phần
+        const discount = total * 0.2;
+        const deliveryFee = 15;
+        const finalTotal = total - discount + deliveryFee;
+
+        // Hiển thị
+        subtotalEl.textContent = `$${total.toFixed(2)}`;
+        discountEl.textContent = `-$${discount.toFixed(2)}`;
+        deliveryFeeEl.textContent = `$${deliveryFee.toFixed(2)}`;
+        totalEl.textContent = `$${finalTotal.toFixed(2)}`;
+    }
+
+    function removeItem(index) {
+      const cart = JSON.parse(localStorage.getItem('cart')) || [];
+      cart.splice(index, 1);
+      localStorage.setItem('cart', JSON.stringify(cart));
+      renderCart();
+      location.reload();
+    }
+
+    document.addEventListener('DOMContentLoaded', renderCart);
+  </script>
+
+<script
+src="https://code.jquery.com/jquery-3.7.1.min.js"
+integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+crossorigin="anonymous"></script>
+
+<script
+type="text/javascript"
+src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+></script>
+<script src="./assets/javascript.js"></script>
+</body>
+</html>
